@@ -21,6 +21,14 @@ def get_high_score():
     conn.close()
     return result if result else 0
 
+def get_all_scores():
+    conn = sqlite3.connect('beaver_game.db')
+    c = conn.cursor()
+    c.execute('SELECT score, timestamp FROM high_scores ORDER BY score DESC LIMIT 10')
+    results = c.fetchall()
+    conn.close()
+    return results
+
 def save_score(score):
     conn = sqlite3.connect('beaver_game.db')
     c = conn.cursor()
@@ -85,6 +93,69 @@ class Obstacle(pygame.sprite.Sprite):
         self.rect.x -= 5
         if self.rect.right < 0:
             self.kill()
+
+def menu():
+    pygame.init()
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    pygame.display.set_caption("Beaver Jumper - Menu")
+    clock = pygame.time.Clock()
+    font = pygame.font.SysFont(None, 48)
+    background = pygame.image.load("beaver.png").convert()
+    background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
+    while True:
+        screen.blit(background, (0, 0))
+        title = font.render("Beaver Jumper", True, (0, 0, 0))
+        start = font.render("Press S to Start Game", True, (0, 0, 0))
+        view_scores = font.render("Press H to View Highscores", True, (0, 0, 0))
+        quit_game = font.render("Press Q to Quit", True, (0, 0, 0))
+
+        screen.blit(title, (SCREEN_WIDTH//2 - title.get_width()//2, 200))
+        screen.blit(start, (SCREEN_WIDTH//2 - start.get_width()//2, 300))
+        screen.blit(view_scores, (SCREEN_WIDTH//2 - view_scores.get_width()//2, 360))
+        screen.blit(quit_game, (SCREEN_WIDTH//2 - quit_game.get_width()//2, 420))
+
+        pygame.display.flip()
+        clock.tick(60)
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                return
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_s:
+                    main()
+                    return
+                elif event.key == pygame.K_h:
+                    show_high_scores(screen, background, font)
+                elif event.key == pygame.K_q:
+                    pygame.quit()
+                    return
+
+def show_high_scores(screen, background, font):
+    scores = get_all_scores()
+    running = True
+    while running:
+        screen.blit(background, (0, 0))
+        title = font.render("High Scores", True, (0, 0, 0))
+        screen.blit(title, (SCREEN_WIDTH//2 - title.get_width()//2, 100))
+
+        for i, (score, timestamp) in enumerate(scores):
+            text = font.render(f"{i+1}. {score} - {timestamp}", True, (0, 0, 0))
+            screen.blit(text, (SCREEN_WIDTH//2 - text.get_width()//2, 180 + i * 40))
+
+        prompt = font.render("Press B to go back", True, (0, 0, 0))
+        screen.blit(prompt, (SCREEN_WIDTH//2 - prompt.get_width()//2, 650))
+
+        pygame.display.flip()
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                return
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_b:
+                    running = False            
 
 def main():
     pygame.init()
@@ -209,4 +280,5 @@ def main():
 
 if __name__ == "__main__":
     init_db()
-    main()
+    menu()
+    #main()
