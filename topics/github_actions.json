@@ -1,0 +1,364 @@
+{
+    "questions": [
+        {
+            "question": "What is GitHub Actions?",
+            "options": [
+                "A) A version control system",
+                "B) An automated workflow tool for software development",
+                "C) A code editor"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which file is used to define a GitHub Action workflow?",
+            "options": [
+                "A) .gitignore",
+                "B) .github/workflows/main.yml",
+                "C) README.md"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of a 'job' in a GitHub Actions workflow?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To specify the environment for running actions",
+                "C) To schedule when workflows should run"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which keyword is used to trigger a workflow on every push event?",
+            "options": [
+                "A) on: push",
+                "B) on: pull_request",
+                "C) on: schedule"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the purpose of the 'runs-on' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define the environment where the job will run",
+                "B) To specify the actions to be executed",
+                "C) To schedule when the workflow should run"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which action is commonly used to set up a Python environment in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/setup-python@v2",
+                "C) actions/cache@v2"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of the 'steps' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To specify the environment for running actions",
+                "C) To list the individual steps within a job"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which action is commonly used to check out code from a repository in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/setup-python@v2",
+                "C) actions/cache@v2"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the purpose of the 'uses' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define the environment where the job will run",
+                "B) To specify the actions to be executed",
+                "C) To schedule when the workflow should run"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which action is commonly used to cache dependencies in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/setup-python@v2",
+                "C) actions/cache@v2"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of the 'with' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define the environment where the job will run",
+                "B) To specify the actions to be executed",
+                "C) To pass input parameters to an action"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which keyword is used to schedule a workflow to run at specific times?",
+            "options": [
+                "A) on: push",
+                "B) on: pull_request",
+                "C) on: schedule"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of the 'env' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify the actions to be executed",
+                "C) To schedule when the workflow should run"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which action is commonly used to send notifications in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/setup-python@v2",
+                "C) actions/send-notification@v1"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of the 'if' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To schedule when the workflow should run"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which action is commonly used to deploy code to a server in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/setup-python@v2",
+                "C) actions/deploy@v1"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of the 'strategy' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To configure different execution strategies for jobs"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which action is commonly used to build and push Docker images in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) docker/build-push-action@v2",
+                "C) actions/setup-python@v2"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of the 'permissions' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To grant specific permissions to the workflow"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which action is commonly used to run tests in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/setup-python@v2",
+                "C) actions/run-tests@v1"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of the 'concurrency' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To manage concurrent executions of workflows"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which action is commonly used to create and update GitHub issues in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/create-issue@v1",
+                "C) actions/setup-python@v2"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of the 'needs' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To declare dependencies between jobs"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which action is commonly used to publish artifacts in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/upload-artifact@v2",
+                "C) actions/setup-python@v2"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of the 'outputs' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To declare outputs from a job that can be used by other jobs"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which action is commonly used to send emails in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/send-email@v1",
+                "C) actions/setup-python@v2"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of the 'secrets' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To store sensitive information securely"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which action is commonly used to create and update GitHub releases in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/create-release@v1",
+                "C) actions/setup-python@v2"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of the 'matrix' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To configure different combinations of inputs for jobs"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which action is commonly used to lint code in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/setup-python@v2",
+                "C) actions/lint-code@v1"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of the 'timeout-minutes' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To set a maximum time limit for job execution"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which action is commonly used to format code in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/setup-python@v2",
+                "C) actions/format-code@v1"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of the 'continue-on-error' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To allow a job to continue running even if a step fails"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which action is commonly used to generate documentation in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/setup-python@v2",
+                "C) actions/generate-docs@v1"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of the 'runs-on' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To configure the runner where the job will execute"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which action is commonly used to deploy code to AWS in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/setup-python@v2",
+                "C) actions/deploy-to-aws@v1"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of the 'env' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To configure different execution strategies for jobs"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which action is commonly used to deploy code to Azure in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/setup-python@v2",
+                "C) actions/deploy-to-azure@v1"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of the 'strategy' keyword in a GitHub Actions workflow?",
+            "options": [
+                "A) To define environment variables for the job",
+                "B) To specify conditions under which a step or job should run",
+                "C) To configure different execution strategies for jobs"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which action is commonly used to deploy code to Google Cloud in a GitHub Actions workflow?",
+            "options": [
+                "A) actions/checkout@v2",
+                "B) actions/setup-python@v2",
+                "C) actions/deploy-to-google-cloud@v1"
+            ],
+            "answer": "C"
+        }
+    ]
+}

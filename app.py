@@ -2,6 +2,7 @@ import pygame
 import sqlite3
 import random
 import json
+import os
 from datetime import datetime
 
 # Initialize database
@@ -37,6 +38,7 @@ def save_score(score):
     conn.commit()
     conn.close()
 
+# Load questions from JSON file 
 def load_questions(filename="questions.json"):
     with open(filename, "r") as file:
         return json.load(file)
@@ -58,7 +60,8 @@ def wrap_text(text, font, max_width):
     return lines
 
 # Game constants
-SCREEN_WIDTH, SCREEN_HEIGHT = 1200, 800
+SCREEN_WIDTH, SCREEN_HEIGHT = 1600, 800
+TOPIC_DIR = "topics"
 FPS = 120
 GRAVITY = 0.8
 JUMP_STRENGTH = -15
@@ -94,6 +97,54 @@ class Obstacle(pygame.sprite.Sprite):
         if self.rect.right < 0:
             self.kill()
 
+def advanced_topic_menu():
+    pygame.init()
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    pygame.display.set_caption("Select a Topic")
+    clock = pygame.time.Clock()
+    font = pygame.font.SysFont(None, 48)
+    small_font = pygame.font.SysFont(None, 32)
+
+    topic_files = sorted([f for f in os.listdir(TOPIC_DIR) if f.endswith(".json")])
+    topics = [f.replace(".json", "").replace("_", " ").title() for f in topic_files]
+    selected_index = 0
+
+    running = True
+    while running:
+        screen.fill((135, 206, 235))
+        title = font.render("Select a Topic", True, (0, 0, 0))
+        screen.blit(title, (SCREEN_WIDTH // 2 - title.get_width() // 2, 100))
+
+        instructions = small_font.render("Use ↑/↓ to navigate, Enter to select, B to go back", True, (50, 50, 50))
+        screen.blit(instructions, (SCREEN_WIDTH // 2 - instructions.get_width() // 2, 160))
+
+        for i, topic in enumerate(topics):
+            color = (255, 255, 255) if i == selected_index else (0, 0, 0)
+            bg_color = (0, 0, 0) if i == selected_index else None
+            text_surface = font.render(topic, True, color)
+            x = SCREEN_WIDTH // 2 - text_surface.get_width() // 2
+            y = 220 + i * 60
+            if bg_color:
+                pygame.draw.rect(screen, bg_color, (x - 10, y - 5, text_surface.get_width() + 20, text_surface.get_height() + 10))
+            screen.blit(text_surface, (x, y))
+
+        pygame.display.flip()
+        clock.tick(60)
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                return None
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_DOWN:
+                    selected_index = (selected_index + 1) % len(topics)
+                elif event.key == pygame.K_UP:
+                    selected_index = (selected_index - 1) % len(topics)
+                elif event.key == pygame.K_RETURN:
+                    return os.path.join(TOPIC_DIR, topic_files[selected_index])
+                elif event.key == pygame.K_b:
+                    return None            
+
 def menu():
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -102,8 +153,9 @@ def menu():
     font = pygame.font.SysFont(None, 48)
     background = pygame.image.load("beaver.png").convert()
     background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
+    running = True
 
-    while True:
+    while running:
         screen.blit(background, (0, 0))
         title = font.render("Beaver Jumper", True, (0, 0, 0))
         start = font.render("Press S to Start Game", True, (0, 0, 0))
@@ -120,12 +172,15 @@ def menu():
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
+                running = False
                 pygame.quit()
                 return
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_s:
-                    main()
-                    return
+                    topic_file = advanced_topic_menu()
+                    if topic_file:
+                        main(topic_file)
+                        return
                 elif event.key == pygame.K_h:
                     show_high_scores(screen, background, font)
                 elif event.key == pygame.K_q:
@@ -157,13 +212,13 @@ def show_high_scores(screen, background, font):
                 if event.key == pygame.K_b:
                     running = False            
 
-def main():
+def main(question_file):
     pygame.init()
+    questions_data = load_questions(question_file)["questions"]
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     pygame.display.set_caption("Beaver Jumper")
     clock = pygame.time.Clock()
 
-    # Load background image
     background = pygame.image.load("beaver.png").convert()
     background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
@@ -180,12 +235,10 @@ def main():
     OBSTACLE_SPAWN = pygame.USEREVENT + 1
     pygame.time.set_timer(OBSTACLE_SPAWN, 1500)
 
-    QUESTIONS = load_questions()
     question_phase = False
     current_question = None
     current_obstacle = None
     selected_answer = None
-
     font_question = pygame.font.SysFont(None, 40)
     font_option = pygame.font.SysFont(None, 32)
     font_instruction = pygame.font.SysFont(None, 28)
@@ -207,9 +260,14 @@ def main():
             if event.type == pygame.KEYDOWN:
                 if question_phase and event.key in [pygame.K_a, pygame.K_b, pygame.K_c]:
                     selected_answer = chr(event.key - pygame.K_a + ord('A'))
-                if event.key == pygame.K_r and game_over:
-                    main()
-                    return
+
+                if game_over:
+                    if event.key == pygame.K_r:
+                        main(question_file)
+                        return
+                    elif event.key == pygame.K_m:
+                        menu()  # ✅ FIX: explicitly call menu
+                        return
 
         if question_phase:
             if selected_answer:
@@ -234,7 +292,7 @@ def main():
             if collided:
                 question_phase = True
                 current_obstacle = collided
-                current_question = random.choice(QUESTIONS)
+                current_question = random.choice(questions_data)
                 selected_answer = None
                 pygame.time.set_timer(OBSTACLE_SPAWN, 0)
 
@@ -269,8 +327,8 @@ def main():
 
         if game_over:
             screen.blit(background, (0, 0))
-            game_over_text = font.render("GAME OVER! Press R to restart", True, (255, 0, 0))
-            screen.blit(game_over_text, (SCREEN_WIDTH//2 - 150, SCREEN_HEIGHT//2))
+            game_over_text = font.render("GAME OVER! Press R to restart or M to return to the main menu", True, (255, 0, 0))
+            screen.blit(game_over_text, (SCREEN_WIDTH//2 - 250, SCREEN_HEIGHT//2))
             high_score_text = font.render(f"High Score: {high_score}", True, (0, 0, 0))
             screen.blit(high_score_text, (SCREEN_WIDTH//2 - 100, SCREEN_HEIGHT//2 + 50))
 
@@ -278,7 +336,11 @@ def main():
 
     pygame.quit()
 
+
 if __name__ == "__main__":
     init_db()
-    menu()
-    #main()
+    while True:
+        pygame.init()
+        if not menu():
+            break  # Exit the loop if menu() returns None (indicating Q was pressed)
+        pygame.quit()

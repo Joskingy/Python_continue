@@ -1,0 +1,310 @@
+{
+    "questions": [
+        {
+            "question": "Which method adds an element to a set?",
+            "options": [
+                "A) append()",
+                "B) add()",
+                "C) insert()"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the time complexity of accessing an element in a dictionary?",
+            "options": [
+                "A) O(1)",
+                "B) O(n)",
+                "C) O(log n)"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which data structure is used to implement a stack in Python?",
+            "options": [
+                "A) list",
+                "B) tuple",
+                "C) set"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What method removes and returns the last element from a list?",
+            "options": [
+                "A) pop()",
+                "B) remove()",
+                "C) delete()"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which data structure is used to implement a queue in Python?",
+            "options": [
+                "A) list",
+                "B) tuple",
+                "C) deque from collections module"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What method adds an element to the end of a list?",
+            "options": [
+                "A) append()",
+                "B) add()",
+                "C) insert()"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which data structure is used to implement a priority queue in Python?",
+            "options": [
+                "A) list",
+                "B) heapq module",
+                "C) set"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What method removes and returns the smallest element from a heap?",
+            "options": [
+                "A) pop()",
+                "B) remove()",
+                "C) heappop()"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which data structure is used to implement a graph in Python?",
+            "options": [
+                "A) list",
+                "B) dictionary",
+                "C) set"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What method adds an element at the beginning of a list?",
+            "options": [
+                "A) append()",
+                "B) add()",
+                "C) insert(0, element)"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which data structure is used to implement a binary search tree in Python?",
+            "options": [
+                "A) list",
+                "B) tuple",
+                "C) class-based implementation"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What method removes the first occurrence of an element from a list?",
+            "options": [
+                "A) pop()",
+                "B) remove()",
+                "C) delete()"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which data structure is used to implement a hash table in Python?",
+            "options": [
+                "A) list",
+                "B) dictionary",
+                "C) set"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What method returns the index of the first occurrence of an element in a list?",
+            "options": [
+                "A) index()",
+                "B) find()",
+                "C) search()"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which data structure is used to implement a trie in Python?",
+            "options": [
+                "A) list",
+                "B) dictionary",
+                "C) class-based implementation"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What method removes and returns the last element from a deque?",
+            "options": [
+                "A) pop()",
+                "B) remove()",
+                "C) delete()"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which data structure is used to implement a stack in Python using collections module?",
+            "options": [
+                "A) list",
+                "B) deque",
+                "C) namedtuple"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What method adds an element to the end of a deque?",
+            "options": [
+                "A) append()",
+                "B) add()",
+                "C) insert()"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which data structure is used to implement a queue in Python using collections module?",
+            "options": [
+                "A) list",
+                "B) deque",
+                "C) namedtuple"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What method removes and returns the first element from a deque?",
+            "options": [
+                "A) pop()",
+                "B) remove()",
+                "C) popleft()"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which data structure is used to implement a priority queue in Python using heapq module?",
+            "options": [
+                "A) list",
+                "B) tuple",
+                "C) set"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What method adds an element to the heap while maintaining the heap property?",
+            "options": [
+                "A) append()",
+                "B) add()",
+                "C) heappush()"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which data structure is used to implement a graph in Python using networkx library?",
+            "options": [
+                "A) list",
+                "B) dictionary",
+                "C) Graph object from networkx"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What method adds an edge between two nodes in a graph?",
+            "options": [
+                "A) add_edge()",
+                "B) connect()",
+                "C) link()"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which data structure is used to implement a binary search tree in Python using class-based implementation?",
+            "options": [
+                "A) list",
+                "B) tuple",
+                "C) Node class with left and right children"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What method inserts a new node into a binary search tree?",
+            "options": [
+                "A) insert()",
+                "B) add_node()",
+                "C) put()"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which data structure is used to implement a hash table in Python using dictionary?",
+            "options": [
+                "A) list",
+                "B) dictionary",
+                "C) set"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What method adds a key-value pair to a dictionary?",
+            "options": [
+                "A) add()",
+                "B) insert()",
+                "C) update()"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which data structure is used to implement a trie in Python using class-based implementation?",
+            "options": [
+                "A) list",
+                "B) dictionary",
+                "C) TrieNode class with children"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What method adds a new character to the trie?",
+            "options": [
+                "A) add()",
+                "B) insert()",
+                "C) put()"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which data structure is used to implement a stack in Python using list?",
+            "options": [
+                "A) list",
+                "B) tuple",
+                "C) set"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What method removes and returns the last element from a list acting as a stack?",
+            "options": [
+                "A) pop()",
+                "B) remove()",
+                "C) delete()"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which data structure is used to implement a queue in Python using list?",
+            "options": [
+                "A) list",
+                "B) tuple",
+                "C) set"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What method removes and returns the first element from a list acting as a queue?",
+            "options": [
+                "A) pop()",
+                "B) remove()",
+                "C) pop(0)"
+            ],
+            "answer": "C"
+        }
+    ]
+}

@@ -1,0 +1,238 @@
+{
+    "questions": [
+        {
+            "question": "What is Machine Learning?",
+            "options": [
+                "A) A method of automating model building",
+                "B) A process for creating algorithms",
+                "C) A technique for data analysis"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which of the following is a type of supervised learning?",
+            "options": [
+                "A) Clustering",
+                "B) Regression",
+                "C) Reinforcement Learning"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is an example of unsupervised learning?",
+            "options": [
+                "A) Linear Regression",
+                "B) K-Means Clustering",
+                "C) Decision Tree"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is commonly used for classification tasks?",
+            "options": [
+                "A) Linear Regression",
+                "B) Support Vector Machine (SVM)",
+                "C) K-Nearest Neighbors (KNN)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What does 'overfitting' mean in the context of machine learning?",
+            "options": [
+                "A) The model performs well on training data but poorly on unseen data",
+                "B) The model performs poorly on both training and unseen data",
+                "C) The model performs well on both training and unseen data"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which technique is used to prevent overfitting?",
+            "options": [
+                "A) Regularization",
+                "B) Cross-validation",
+                "C) Both A and B"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is a neural network?",
+            "options": [
+                "A) A type of machine learning algorithm inspired by the structure and function of biological neural networks",
+                "B) A method for data visualization",
+                "C) A technique for feature selection"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which layer is responsible for learning complex patterns in a neural network?",
+            "options": [
+                "A) Input Layer",
+                "B) Hidden Layer",
+                "C) Output Layer"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What does 'bias' refer to in the context of machine learning?",
+            "options": [
+                "A) The error rate of a model",
+                "B) A parameter that influences the output of a neural network",
+                "C) The amount of data used for training"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is commonly used for clustering?",
+            "options": [
+                "A) Linear Regression",
+                "B) K-Means Clustering",
+                "C) Decision Tree"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of a 'loss function' in machine learning?",
+            "options": [
+                "A) To measure how well a model's predictions match the actual data",
+                "B) To optimize the model parameters",
+                "C) Both A and B"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which technique is used to improve the generalization of a machine learning model?",
+            "options": [
+                "A) Regularization",
+                "B) Cross-validation",
+                "C) Both A and B"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is 'feature scaling' in machine learning?",
+            "options": [
+                "A) The process of selecting the most relevant features for a model",
+                "B) The process of normalizing or standardizing feature values",
+                "C) The process of removing outliers from data"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is commonly used for regression tasks?",
+            "options": [
+                "A) Linear Regression",
+                "B) Support Vector Machine (SVM)",
+                "C) K-Nearest Neighbors (KNN)"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What does 'underfitting' mean in the context of machine learning?",
+            "options": [
+                "A) The model performs well on training data but poorly on unseen data",
+                "B) The model performs poorly on both training and unseen data",
+                "C) The model performs well on both training and unseen data"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which technique is used to prevent underfitting?",
+            "options": [
+                "A) Regularization",
+                "B) Cross-validation",
+                "C) Increasing the complexity of the model"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is a 'confusion matrix' in machine learning?",
+            "options": [
+                "A) A table used to describe the performance of a classification model",
+                "B) A method for feature selection",
+                "C) A technique for data normalization"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which metric is commonly used to evaluate the accuracy of a classification model?",
+            "options": [
+                "A) Precision",
+                "B) Recall",
+                "C) F1 Score"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is 'cross-validation' in machine learning?",
+            "options": [
+                "A) A technique for splitting data into training and testing sets",
+                "B) A method for evaluating the performance of a model by partitioning the data into subsets",
+                "C) A process for feature scaling"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is commonly used for anomaly detection?",
+            "options": [
+                "A) Linear Regression",
+                "B) Isolation Forest",
+                "C) Decision Tree"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What does 'supervised learning' mean in the context of machine learning?",
+            "options": [
+                "A) The model learns from labeled data",
+                "B) The model learns from unlabeled data",
+                "C) The model learns from a combination of labeled and unlabeled data"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which algorithm is commonly used for dimensionality reduction?",
+            "options": [
+                "A) Linear Regression",
+                "B) Principal Component Analysis (PCA)",
+                "C) Decision Tree"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What does 'unsupervised learning' mean in the context of machine learning?",
+            "options": [
+                "A) The model learns from labeled data",
+                "B) The model learns from unlabeled data",
+                "C) The model learns from a combination of labeled and unlabeled data"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is commonly used for reinforcement learning?",
+            "options": [
+                "A) Q-Learning",
+                "B) Support Vector Machine (SVM)",
+                "C) Decision Tree"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What does 'bias-variance tradeoff' mean in the context of machine learning?",
+            "options": [
+                "A) The tradeoff between model complexity and training error",
+                "B) The tradeoff between model accuracy and computational efficiency",
+                "C) The tradeoff between model interpretability and performance"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which technique is used to handle missing data in a dataset?",
+            "options": [
+                "A) Imputation",
+                "B) Feature selection",
+                "C) Data normalization"
+            ],
+            "answer": "A"
+        }
+    ]
+}

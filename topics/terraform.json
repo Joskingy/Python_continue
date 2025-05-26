@@ -1,0 +1,274 @@
+{
+    "questions": [
+        {
+            "question": "What is Terraform?",
+            "options": [
+                "A) A configuration management tool",
+                "B) An infrastructure as code (IaC) tool",
+                "C) A container orchestration platform"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which file extension is commonly used for Terraform configuration files?",
+            "options": [
+                "A) .tf",
+                "B) .yaml",
+                "C) .json"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the purpose of a 'provider' in Terraform?",
+            "options": [
+                "A) To define the infrastructure resources to be managed",
+                "B) To specify the cloud provider or other APIs that Terraform will interact with",
+                "C) To manage state data"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to initialize a new Terraform working directory?",
+            "options": [
+                "A) terraform init",
+                "B) terraform plan",
+                "C) terraform apply"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the purpose of a 'resource' in Terraform?",
+            "options": [
+                "A) To define the infrastructure resources to be managed",
+                "B) To specify the cloud provider or other APIs that Terraform will interact with",
+                "C) To manage state data"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which command is used to generate an execution plan for Terraform?",
+            "options": [
+                "A) terraform init",
+                "B) terraform plan",
+                "C) terraform apply"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of a 'variable' in Terraform?",
+            "options": [
+                "A) To define input values that can be customized when running Terraform",
+                "B) To specify the cloud provider or other APIs that Terraform will interact with",
+                "C) To manage state data"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which command is used to apply the changes defined in a Terraform configuration?",
+            "options": [
+                "A) terraform init",
+                "B) terraform plan",
+                "C) terraform apply"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'module' in Terraform?",
+            "options": [
+                "A) To define reusable components that encapsulate infrastructure logic",
+                "B) To specify the cloud provider or other APIs that Terraform will interact with",
+                "C) To manage state data"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which command is used to create a new Terraform module?",
+            "options": [
+                "A) terraform init",
+                "B) terraform plan",
+                "C) terraform apply"
+            ],
+            "answer": "None, modules are created manually by organizing configuration files."
+        },
+        {
+            "question": "What is the purpose of a 'state' file in Terraform?",
+            "options": [
+                "A) To define input values that can be customized when running Terraform",
+                "B) To track the current state of managed infrastructure resources",
+                "C) To specify the cloud provider or other APIs that Terraform will interact with"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to view the current state in a Terraform configuration?",
+            "options": [
+                "A) terraform init",
+                "B) terraform plan",
+                "C) terraform show"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'data source' in Terraform?",
+            "options": [
+                "A) To define input values that can be customized when running Terraform",
+                "B) To retrieve information about existing infrastructure resources",
+                "C) To specify the cloud provider or other APIs that Terraform will interact with"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to import an existing infrastructure resource into Terraform?",
+            "options": [
+                "A) terraform init",
+                "B) terraform import",
+                "C) terraform apply"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of a 'output' in Terraform?",
+            "options": [
+                "A) To define input values that can be customized when running Terraform",
+                "B) To specify the cloud provider or other APIs that Terraform will interact with",
+                "C) To display information about infrastructure resources after they are created"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which command is used to validate a Terraform configuration?",
+            "options": [
+                "A) terraform init",
+                "B) terraform validate",
+                "C) terraform apply"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of a 'remote state' in Terraform?",
+            "options": [
+                "A) To define input values that can be customized when running Terraform",
+                "B) To store the state file remotely, allowing for collaboration and versioning",
+                "C) To specify the cloud provider or other APIs that Terraform will interact with"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to configure remote state in Terraform?",
+            "options": [
+                "A) terraform init",
+                "B) terraform plan",
+                "C) terraform apply"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the purpose of a 'workspace' in Terraform?",
+            "options": [
+                "A) To define input values that can be customized when running Terraform",
+                "B) To allow for multiple isolated environments within a single Terraform configuration",
+                "C) To specify the cloud provider or other APIs that Terraform will interact with"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Terraform workspace?",
+            "options": [
+                "A) terraform init",
+                "B) terraform workspace new",
+                "C) terraform apply"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of a 'backend' in Terraform?",
+            "options": [
+                "A) To define input values that can be customized when running Terraform",
+                "B) To specify where the state file should be stored (locally or remotely)",
+                "C) To specify the cloud provider or other APIs that Terraform will interact with"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to configure a backend in Terraform?",
+            "options": [
+                "A) terraform init",
+                "B) terraform plan",
+                "C) terraform apply"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the purpose of a 'terraform.tfvars' file in Terraform?",
+            "options": [
+                "A) To define input values that can be customized when running Terraform",
+                "B) To specify the cloud provider or other APIs that Terraform will interact with",
+                "C) To store the state file"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which command is used to apply a Terraform configuration using variables from a file?",
+            "options": [
+                "A) terraform init",
+                "B) terraform plan -var-file=terraform.tfvars",
+                "C) terraform apply -var-file=terraform.tfvars"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'for_each' expression in Terraform?",
+            "options": [
+                "A) To define input values that can be customized when running Terraform",
+                "B) To create multiple instances of a resource based on a map or set",
+                "C) To specify the cloud provider or other APIs that Terraform will interact with"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to destroy infrastructure managed by Terraform?",
+            "options": [
+                "A) terraform init",
+                "B) terraform plan -destroy",
+                "C) terraform destroy"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'count' expression in Terraform?",
+            "options": [
+                "A) To define input values that can be customized when running Terraform",
+                "B) To create multiple instances of a resource based on a numeric value",
+                "C) To specify the cloud provider or other APIs that Terraform will interact with"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to refresh the state of managed resources in Terraform?",
+            "options": [
+                "A) terraform init",
+                "B) terraform plan -refresh-only",
+                "C) terraform apply -refresh-only"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'locals' block in Terraform?",
+            "options": [
+                "A) To define input values that can be customized when running Terraform",
+                "B) To create multiple instances of a resource based on a numeric value",
+                "C) To define local variables for use within the configuration"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which command is used to format Terraform configuration files?",
+            "options": [
+                "A) terraform fmt",
+                "B) terraform init",
+                "C) terraform validate"
+            ],
+            "answer": "A"
+        }
+    ]
+}

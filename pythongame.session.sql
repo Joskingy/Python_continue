@@ -1,2 +1,1 @@
-SELECT * FROM high_scores
-WHERE player_id = 1
+delete from high_scores where score = 5240

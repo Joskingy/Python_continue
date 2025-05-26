@@ -1,0 +1,274 @@
+{
+    "questions": [
+        {
+            "question": "What is Kubernetes?",
+            "options": [
+                "A) A container orchestration platform",
+                "B) A version control system",
+                "C) A cloud service provider"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes deployment?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl create deployment",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'Pod' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To specify the environment for running containers",
+                "C) To manage multiple containers as a single unit"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which command is used to list all pods in a Kubernetes cluster?",
+            "options": [
+                "A) kubectl get pods",
+                "B) kubectl describe pods",
+                "C) kubectl logs pods"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the purpose of a 'Service' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To expose a set of Pods as a network service",
+                "C) To manage multiple containers as a single unit"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes Service?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl expose deployment",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'Deployment' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To manage the desired state of a set of Pods",
+                "C) To expose a set of Pods as a network service"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to scale a Kubernetes Deployment?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl scale deployment",
+                "C) kubectl apply -f"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of a 'Namespace' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To provide a way to divide cluster resources between multiple users or projects",
+                "C) To expose a set of Pods as a network service"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes Namespace?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl create namespace",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'ConfigMap' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To store configuration data for use by Pods",
+                "C) To expose a set of Pods as a network service"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes ConfigMap?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl create configmap",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'Secret' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To store sensitive information such as passwords or tokens",
+                "C) To expose a set of Pods as a network service"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes Secret?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl create secret",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'PersistentVolume' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To provide storage resources for use by Pods",
+                "C) To expose a set of Pods as a network service"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes PersistentVolume?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl create persistentvolume",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'PersistentVolumeClaim' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To request storage resources from a PersistentVolume",
+                "C) To expose a set of Pods as a network service"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes PersistentVolumeClaim?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl create persistentvolumeclaim",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'DaemonSet' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To ensure that all (or some) Nodes run a copy of a Pod",
+                "C) To expose a set of Pods as a network service"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes DaemonSet?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl create daemonset",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'StatefulSet' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To manage stateful applications that require stable, unique network identities and persistent storage",
+                "C) To expose a set of Pods as a network service"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes StatefulSet?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl create statefulset",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'Job' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To manage Pods that run until they complete successfully",
+                "C) To expose a set of Pods as a network service"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes Job?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl create job",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'CronJob' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To manage Pods that run on a schedule",
+                "C) To expose a set of Pods as a network service"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes CronJob?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl create cronjob",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'HorizontalPodAutoscaler' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To automatically scale the number of Pods in a deployment based on observed CPU utilization or other select metrics",
+                "C) To expose a set of Pods as a network service"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes HorizontalPodAutoscaler?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl autoscale deployment",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the purpose of a 'Ingress' in Kubernetes?",
+            "options": [
+                "A) To define a specific task to be executed",
+                "B) To manage external access to services within the cluster, typically HTTP and HTTPS",
+                "C) To expose a set of Pods as a network service"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which command is used to create a new Kubernetes Ingress?",
+            "options": [
+                "A) kubectl run",
+                "B) kubectl create ingress",
+                "C) kubectl apply -f"
+            ],
+            "answer": "C"
+        }
+    ]
+}

@@ -1,0 +1,292 @@
+{
+    "questions": [
+        {
+            "question": "What is the time complexity of linear search?",
+            "options": [
+                "A) O(1)",
+                "B) O(n)",
+                "C) O(log n)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is used to sort an array in ascending order with a time complexity of O(n log n)?",
+            "options": [
+                "A) Bubble Sort",
+                "B) Quick Sort",
+                "C) Selection Sort"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the best-case time complexity of merge sort?",
+            "options": [
+                "A) O(n)",
+                "B) O(n log n)",
+                "C) O(log n)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is used to find the shortest path in a graph with non-negative weights?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Bellman-Ford Algorithm",
+                "C) Floyd-Warshall Algorithm"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the time complexity of binary search on a sorted array?",
+            "options": [
+                "A) O(1)",
+                "B) O(n)",
+                "C) O(log n)"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which algorithm is used to find the minimum spanning tree in a graph?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Prim's Algorithm",
+                "C) Kruskal's Algorithm"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the time complexity of bubble sort?",
+            "options": [
+                "A) O(1)",
+                "B) O(n log n)",
+                "C) O(n^2)"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which algorithm is used to find the maximum flow in a network?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Ford-Fulkerson Method",
+                "C) Bellman-Ford Algorithm"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the time complexity of insertion sort?",
+            "options": [
+                "A) O(1)",
+                "B) O(n log n)",
+                "C) O(n^2)"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which algorithm is used to find the longest common subsequence between two sequences?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Bellman-Ford Algorithm",
+                "C) Dynamic Programming"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the time complexity of quicksort in its average case?",
+            "options": [
+                "A) O(1)",
+                "B) O(n log n)",
+                "C) O(n^2)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is used to find the shortest path from a single source in a graph with negative weights?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Bellman-Ford Algorithm",
+                "C) Floyd-Warshall Algorithm"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the time complexity of selection sort?",
+            "options": [
+                "A) O(1)",
+                "B) O(n log n)",
+                "C) O(n^2)"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which algorithm is used to find the strongly connected components in a directed graph?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Tarjan's Algorithm",
+                "C) Bellman-Ford Algorithm"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the time complexity of counting sort?",
+            "options": [
+                "A) O(1)",
+                "B) O(n + k)",
+                "C) O(n log n)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is used to find the maximum bipartite matching in a graph?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Ford-Fulkerson Method",
+                "C) Hungarian Algorithm"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the time complexity of radix sort?",
+            "options": [
+                "A) O(1)",
+                "B) O(nk)",
+                "C) O(n log n)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is used to find the shortest path in a graph with negative cycles?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Bellman-Ford Algorithm",
+                "C) Floyd-Warshall Algorithm"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the time complexity of bucket sort?",
+            "options": [
+                "A) O(1)",
+                "B) O(n + k)",
+                "C) O(n log n)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is used to find the longest increasing subsequence in a sequence?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Bellman-Ford Algorithm",
+                "C) Dynamic Programming"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the time complexity of shell sort?",
+            "options": [
+                "A) O(1)",
+                "B) O(n log n)",
+                "C) Depends on gap sequence"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which algorithm is used to find the minimum edit distance between two strings?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Bellman-Ford Algorithm",
+                "C) Dynamic Programming"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the time complexity of topological sorting in a directed acyclic graph?",
+            "options": [
+                "A) O(1)",
+                "B) O(n + e)",
+                "C) O(n log n)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is used to find the maximum flow in a network with unit capacities?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Ford-Fulkerson Method",
+                "C) Bellman-Ford Algorithm"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the time complexity of heap sort?",
+            "options": [
+                "A) O(1)",
+                "B) O(n log n)",
+                "C) O(n^2)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is used to find the shortest path in a graph with negative weights and cycles?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Bellman-Ford Algorithm",
+                "C) Floyd-Warshall Algorithm"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the time complexity of counting sort when k (range of input) is much larger than n?",
+            "options": [
+                "A) O(1)",
+                "B) O(n + k)",
+                "C) O(n log n)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is used to find the maximum bipartite matching in a graph?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Ford-Fulkerson Method",
+                "C) Hungarian Algorithm"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What is the time complexity of radix sort when k (number of digits) is much larger than n?",
+            "options": [
+                "A) O(1)",
+                "B) O(nk)",
+                "C) O(n log n)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is used to find the shortest path in a graph with negative weights and cycles?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Bellman-Ford Algorithm",
+                "C) Floyd-Warshall Algorithm"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the time complexity of bucket sort when k (number of buckets) is much larger than n?",
+            "options": [
+                "A) O(1)",
+                "B) O(n + k)",
+                "C) O(n log n)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is used to find the longest increasing subsequence in a sequence?",
+            "options": [
+                "A) Dijkstra's Algorithm",
+                "B) Bellman-Ford Algorithm",
+                "C) Dynamic Programming"
+            ],
+            "answer": "C"
+        }
+    ]
+}

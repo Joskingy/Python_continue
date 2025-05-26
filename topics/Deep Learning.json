@@ -1,0 +1,220 @@
+{
+    "questions": [
+        {
+            "question": "What is Deep Learning?",
+            "options": [
+                "A) A subset of machine learning that uses neural networks with multiple layers",
+                "B) A method for data visualization",
+                "C) A technique for feature selection"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which type of neural network is commonly used for image classification?",
+            "options": [
+                "A) Convolutional Neural Network (CNN)",
+                "B) Recurrent Neural Network (RNN)",
+                "C) Support Vector Machine (SVM)"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the purpose of a 'convolutional layer' in a CNN?",
+            "options": [
+                "A) To extract features from input data",
+                "B) To perform classification tasks",
+                "C) To handle sequential data"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which activation function is commonly used in the hidden layers of a neural network?",
+            "options": [
+                "A) ReLU (Rectified Linear Unit)",
+                "B) Sigmoid",
+                "C) Tanh"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What does 'backpropagation' refer to in the context of deep learning?",
+            "options": [
+                "A) The process of training a neural network by adjusting weights based on error",
+                "B) A method for feature selection",
+                "C) A technique for data normalization"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which type of neural network is commonly used for natural language processing?",
+            "options": [
+                "A) Convolutional Neural Network (CNN)",
+                "B) Recurrent Neural Network (RNN)",
+                "C) Support Vector Machine (SVM)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of a 'recurrent layer' in an RNN?",
+            "options": [
+                "A) To extract features from input data",
+                "B) To handle sequential data",
+                "C) To perform classification tasks"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which algorithm is commonly used for unsupervised learning in deep learning?",
+            "options": [
+                "A) Autoencoder",
+                "B) Support Vector Machine (SVM)",
+                "C) Decision Tree"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What does 'dropout' refer to in the context of deep learning?",
+            "options": [
+                "A) A technique for preventing overfitting by randomly setting a fraction of input units to 0 at each update during training",
+                "B) A method for feature selection",
+                "C) A technique for data normalization"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which type of neural network is commonly used for time series forecasting?",
+            "options": [
+                "A) Convolutional Neural Network (CNN)",
+                "B) Recurrent Neural Network (RNN)",
+                "C) Support Vector Machine (SVM)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of a 'fully connected layer' in a neural network?",
+            "options": [
+                "A) To extract features from input data",
+                "B) To perform classification tasks",
+                "C) To connect all neurons in one layer to all neurons in another layer"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "Which technique is commonly used for training deep neural networks?",
+            "options": [
+                "A) Gradient Descent",
+                "B) Feature selection",
+                "C) Data normalization"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What does 'transfer learning' refer to in the context of deep learning?",
+            "options": [
+                "A) The process of training a neural network from scratch using new data",
+                "B) The process of adapting a pre-trained model to a new task with limited data",
+                "C) A method for feature selection"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which type of neural network is commonly used for generative tasks?",
+            "options": [
+                "A) Generative Adversarial Network (GAN)",
+                "B) Recurrent Neural Network (RNN)",
+                "C) Support Vector Machine (SVM)"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the purpose of a 'discriminator' in a GAN?",
+            "options": [
+                "A) To generate data that resembles real data",
+                "B) To distinguish between real and generated data",
+                "C) To perform classification tasks"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which type of neural network is commonly used for reinforcement learning?",
+            "options": [
+                "A) Q-Learning",
+                "B) Recurrent Neural Network (RNN)",
+                "C) Support Vector Machine (SVM)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What does 'batch normalization' refer to in the context of deep learning?",
+            "options": [
+                "A) A technique for preventing overfitting by randomly setting a fraction of input units to 0 at each update during training",
+                "B) A method for normalizing inputs to each layer",
+                "C) A technique for data normalization"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which type of neural network is commonly used for computer vision tasks?",
+            "options": [
+                "A) Convolutional Neural Network (CNN)",
+                "B) Recurrent Neural Network (RNN)",
+                "C) Support Vector Machine (SVM)"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What is the purpose of a 'pooling layer' in a CNN?",
+            "options": [
+                "A) To extract features from input data",
+                "B) To reduce the spatial dimensions of the feature maps",
+                "C) To perform classification tasks"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which type of neural network is commonly used for speech recognition?",
+            "options": [
+                "A) Convolutional Neural Network (CNN)",
+                "B) Recurrent Neural Network (RNN)",
+                "C) Support Vector Machine (SVM)"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What is the purpose of a 'softmax layer' in a neural network?",
+            "options": [
+                "A) To extract features from input data",
+                "B) To perform classification tasks by outputting probabilities for each class",
+                "C) To handle sequential data"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "Which type of neural network is commonly used for recommendation systems?",
+            "options": [
+                "A) Convolutional Neural Network (CNN)",
+                "B) Recurrent Neural Network (RNN)",
+                "C) Collaborative Filtering"
+            ],
+            "answer": "C"
+        },
+        {
+            "question": "What does 'overfitting' mean in the context of deep learning?",
+            "options": [
+                "A) The model performs well on training data but poorly on unseen data",
+                "B) The model performs poorly on both training and unseen data",
+                "C) The model performs well on both training and unseen data"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "Which technique is commonly used to prevent overfitting in deep learning?",
+            "options": [
+                "A) Regularization",
+                "B) Cross-validation",
+                "C) Both A and B"
+            ],
+            "answer": "C"
+        }
+    ]
+}
