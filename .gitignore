@@ -2,5 +2,5 @@
 node_modules
 package-lock.json
 package.json
-pythongame.settings.sql
+pythongame.session.sql
 Python_continue.code-workspace
